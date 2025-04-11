@@ -1,0 +1,101 @@
+.section-initial, .section-intermediary, .section-final {
+  display: flex;
+  justify-content: center;
+
+}
+.article-section {
+  width: 80%;
+  padding-top: 70px;
+  text-align: center;
+    
+}
+  @media screen and (min-width: 768px) {
+    .article-section  {
+      max-width: 768px;
+    }  
+  }
+  
+  .article-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0e1658;
+    margin-bottom: 20px;
+  }
+  
+  .article-section p {
+    font-size: 18px;
+    color: #0e1658;
+    line-height: 1.6;
+    margin: 0 auto ;
+  }
+.section-intermediary .article-section{
+    padding-top: 20px;
+  }
+.section-final {
+    background-color: white;
+    display: flex;
+    border-radius: 10px 10px 0px 0;
+
+  }
+.section-final .article-section h1,h4{
+  font-weight: 600;
+  font-size: 30px;
+  color: #0e1658;
+}
+.section-final .article-section h4 {
+  font-size: 22px;
+  color: #0e1558aa;
+}
+.section-final .article-section p {
+  font-size: 16px;
+  color: #080b29ad;
+}
+.section-final div .article-section {
+  text-align: start;
+  justify-content: start;
+  max-width: 460px;
+  padding: 20px;
+  flex-wrap: wrap; /* Permite que os itens quebrem linha */
+  justify-content: center; /* Centraliza os itens */
+}
+.section-final div {
+  display: flex;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.rounded-image {
+  width: 400px; /* Tamanho quadrado */
+  height: 600px;
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
+  border-radius: 100px 0px 100px 0px; /* Arredondamento nos cantos superior e inferior */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra leve para destacar */
+}
+
+/* 📱 Para tablets (telas menores que 1024px) */
+@media screen and (max-width: 1024px) {
+  .section-final div {
+    max-width: 90%; /* Reduz um pouco a largura */
+    flex-direction: column; /* Altera a disposição para coluna */
+    text-align: center; /* Centraliza o texto */
+  }
+}
+
+/* 📱 Para celulares (telas menores que 768px) */
+@media screen and (max-width: 768px) {
+  .section-final div {
+    max-width: 100%; /* Ocupar toda a largura */
+    padding: 10px; /* Reduz o padding para melhor adaptação */
+  }  
+}
+
+@media screen and (min-width: 768px) {
+  .rounded-image {
+    width: 500px;
+    height: 600px;
+  }
+}

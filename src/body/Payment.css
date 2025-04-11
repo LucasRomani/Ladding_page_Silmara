@@ -1,0 +1,35 @@
+  /* Botão de pagamento */
+  
+  .pay{
+    text-align: center;
+    padding-top: 20px;
+  }
+  .payment-button {
+    display: inline-block;
+    margin: 5px auto;
+    padding: 15px 25px;
+    background-color: #0e1658;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .payment-button:hover {
+    background-color: #0e1558;
+    transform: scale(1.05);
+  }
+  
+  /* Observação de proteção de dados */
+  .data-protection {
+    font-size: 14px;
+    color: #0e1558c1;
+    margin-top: 10px;
+    padding: 0 20px 20px;
+
+    font-style: italic;
+  }
+  
+  
