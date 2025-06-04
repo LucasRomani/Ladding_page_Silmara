@@ -5,6 +5,11 @@
     position: relative;
     background-attachment: fixed;
   }
+  @supports (-webkit-touch-callout: none) {
+  .background {
+    background-attachment: scroll;
+  }
+}
 
   
   .feature-section::before {
