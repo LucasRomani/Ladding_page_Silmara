@@ -5,3 +5,4 @@ export const fbTrack = (event, data = {}) => {
     console.warn("Facebook Pixel não carregado ainda");
   }
 };
+export default fbTrack;

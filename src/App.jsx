@@ -6,7 +6,8 @@ import './App.css';
 import SectionBonus from './body/SectionBonus';
 import LocationSection from './body/LocationSection';
 import Footer from './body/Footer';
-import { fbTrack } from './facebookPixel';
+import fbTrack from './body/facebookPixel';
+
 
 function App() {
   useEffect(() => {
